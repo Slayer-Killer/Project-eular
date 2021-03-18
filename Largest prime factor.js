@@ -1,18 +1,19 @@
-factors = []; a = 13195;
+var factors = [], a = 13195;
 
 function cprime(x){
-	for(i = 2; i < x; i++)
+	for(i = 2; i <= x; i++)
 	{
 		if(x % i == 0) {
-			return 1;
+			return undefined;
 		}
 	}
 	return x;
 }
 
-for(i = 2; i <= a/2; i++){
+for(i = 2; i <= a/8; i++){
 	if(a % i == 0) {
-		if(cprime(i) != 1) factors.push() 
+		if(cprime(i)) 
+			factors.push() 
 	}
 }
 console.log(factors)
