@@ -5,4 +5,4 @@ for(i = 100; i <= 999; i++){
 	}
 }
 
-console.log(palin[palin.length - 1])
+console.log(palin.sort(function(a, b){return a - b})[palin.length - 1])
